@@ -13,7 +13,7 @@ public class ListaViajes {
     }
     
     public void agregarDatos(){
-        System.out.print("Ingresa el nombre del pasajero");
+        System.out.print("Ingresa el nombre del pasajero: ");
         String nombre = input.nextLine();
         Persona persona = new Persona(nombre);
         input.nextLine(); //limpie salto de linea

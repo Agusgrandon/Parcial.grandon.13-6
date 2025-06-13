@@ -24,6 +24,5 @@ public class Viaje {
     public String toString() {
         return "Viaje{" + "pasajero=" + pasajero + ", vehiculo=" + vehiculo + ", pasaje=" + pasaje + '}';
     }
-    
-    
+     
 }
