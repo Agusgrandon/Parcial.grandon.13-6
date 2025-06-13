@@ -25,8 +25,13 @@ public class ParcialViernes {
             switch(opcion){
                 case 1:
                     listado.agregarDatos();
+                    break;
                 case 2:
                     listado.mostrarDatos();
+                    break;
+                case 5:
+                    System.out.println("El total recaudado es: " + listado.totalRecaudado());
+                    break;
                 case 6:
                     seguir = false;
                     break;

@@ -83,4 +83,12 @@ public class ListaViajes {
             }
         }
     }
+    
+    public double totalRecaudado(){
+        double total = 0;
+        for(Viaje viaje : listaDeViajes){
+            total += viaje.getCosto();
+        }
+        return total;
+    }
 }
