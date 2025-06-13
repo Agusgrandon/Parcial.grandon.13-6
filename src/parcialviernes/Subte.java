@@ -10,4 +10,9 @@ public class Subte extends VehiculoTransporte{
     public double CalcularCostobase(){
      return 700;
     }
+    
+    @Override
+    public String toString() {
+        return "costo= " + CalcularCostobase();
+    }
 }

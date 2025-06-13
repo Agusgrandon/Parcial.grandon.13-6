@@ -38,6 +38,8 @@ public abstract class VehiculoTransporte {
     public String toString() {
         return "VehiculoTransporte{" + "empresa=" + empresa + ", capacidad=" + capacidad + ", patente=" + patente + '}';
     }
+
+
     
 }
 
