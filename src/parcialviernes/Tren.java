@@ -12,4 +12,8 @@ public class Tren extends VehiculoTransporte{
      return 600;
     }
     
+    @Override
+    public String toString() {
+        return "costo= " + CalcularCostobase();
+    }
 }

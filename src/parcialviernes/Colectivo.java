@@ -11,4 +11,9 @@ public class Colectivo extends VehiculoTransporte{
     public double CalcularCostobase(){
      return 500;
     }
+    
+    @Override
+    public String toString() {
+        return "costo= " + CalcularCostobase();
+    }
 }
