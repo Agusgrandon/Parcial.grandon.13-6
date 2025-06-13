@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.Collection;
+import java.util.Collections;
 
 public class ListaViajes {
     private List<Viaje> listaDeViajes;
@@ -95,6 +96,11 @@ public class ListaViajes {
     
     public void ordenarPorNombre(){
         listaDeViajes.sort(Comparador.porNombre);
+        mostrarDatos();
+    }
+    
+    public void ordenarPorCosto(){
+        Collections.sort(listaDeViajes);
         mostrarDatos();
     }
     

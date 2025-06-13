@@ -29,6 +29,12 @@ public class ParcialViernes {
                 case 2:
                     listado.mostrarDatos();
                     break;
+                case 3:
+                    listado.ordenarPorCosto();
+                    break;
+                case 4:
+                    listado.ordenarPorNombre();
+                    break;
                 case 5:
                     System.out.println("El total recaudado es: " + listado.totalRecaudado());
                     break;
