@@ -2,6 +2,7 @@ package parcialviernes;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Collection;
 
 public class ListaViajes {
     private List<Viaje> listaDeViajes;
@@ -91,4 +92,11 @@ public class ListaViajes {
         }
         return total;
     }
+    
+    public void ordenarPorNombre(){
+        listaDeViajes.sort(Comparador.porNombre);
+        mostrarDatos();
+    }
+    
+    
 }

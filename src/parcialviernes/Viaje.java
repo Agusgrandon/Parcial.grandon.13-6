@@ -1,7 +1,7 @@
 package parcialviernes;
 
 
-public class Viaje {
+public class Viaje implements Comparable<Viaje>{
     private Persona pasajero;
     private VehiculoTransporte vehiculo;
     private Pasaje pasaje;
@@ -23,6 +23,11 @@ public class Viaje {
     @Override
     public String toString() {
         return "Viaje{" + "pasajero=" + pasajero + ", vehiculo=" + vehiculo + ", pasaje=" + pasaje + '}';
+    }
+    
+    @Override
+    public int compareTo(Viaje viaje){
+        return Double.compare(this.getCosto(), viaje.getCosto());
     }
      
 }
