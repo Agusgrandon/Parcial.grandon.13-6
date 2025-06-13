@@ -15,5 +15,15 @@ public class Viaje {
     public double getCosto(){
      return pasaje.calcularCostoFinal(vehiculo.CalcularCostobase());
     }
-        
+    
+    public Persona getPasajero(){
+        return pasajero;
+    }
+
+    @Override
+    public String toString() {
+        return "Viaje{" + "pasajero=" + pasajero + ", vehiculo=" + vehiculo + ", pasaje=" + pasaje + '}';
+    }
+    
+    
 }
