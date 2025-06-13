@@ -53,6 +53,34 @@ public class ListaViajes {
         System.out.println("2. Pasaje estudiante");
         System.out.println("3. Pasaje jubilado");
         System.out.print("Ingresa una opcion: ");
+        int opcion2 = input.nextInt();
+        input.nextLine();
+        
+        Pasaje pasaje = null;
+        
+        switch(opcion2){
+            case 1:
+                pasaje = new PasajeComun();
+                break;
+            case 2:
+                pasaje = new PasajeEstudiante();
+                break;
+            case 3:
+                pasaje = new PasajeJubilado();
+                break;
+        }
+        
+        Viaje viajeFinal = new Viaje(persona, vehiculo, pasaje);
+        listaDeViajes.add(viajeFinal);
     }
     
+    public void mostrarDatos(){
+        if(listaDeViajes.isEmpty()){
+            System.out.println("La lista esta vacia, tenes que agregar datos");
+        } else {
+            for(Viaje a : listaDeViajes){
+                System.out.println(a);
+            }
+        }
+    }
 }
