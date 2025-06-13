@@ -41,8 +41,12 @@ public class ParcialViernes {
                 case 6:
                     seguir = false;
                     break;
+                default:
+                    System.out.println("Opcion incorrecta");
+                    break;
             }
         }
+        input.close();
     }
     
 }
