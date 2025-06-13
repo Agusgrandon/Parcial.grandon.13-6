@@ -12,6 +12,11 @@ public class ParcialViernes {
         
         while(seguir){
             System.out.println("Menu");
+            System.out.println("1. Registra un viaje");
+            System.out.println("2. Mostrar los viajes");
+            System.out.println("3. Ordenar los viajes por costo");
+            System.out.println("4. Ordenar los viajes por nombre del usuario");
+            System.out.println("Mostrar el total recaudado");
             System.out.print("Ingresa una opcion: ");
             opcion = input.nextInt();
             
